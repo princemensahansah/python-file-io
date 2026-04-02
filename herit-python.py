@@ -13,8 +13,8 @@ def search_word(infile_name='origin.txt',outfile_name='herit_output.txt'):
                 match = herit_pattern.search(line)
                 if match:
                     line = line.strip()
-                    print(f'{line_index}: {match.groups()[0]}')
-                    out_stream.write(f'{line_index}: {match.groups()[0]}\n')
+                    print(f'{line_index} {match.groups()[0]}')
+                    out_stream.write(f'{line_index} {match.groups()[0]}\n')
 
 
 if __name__ == '__main__':
